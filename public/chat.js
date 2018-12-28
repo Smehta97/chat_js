@@ -2,12 +2,11 @@ $(function(){
     var socket = io.connect('http://localhost:3000')
 
     //buttons, inputs
-    var message = $("#message")
-    var username = $("#username")
     var send_msg = $("#send_msg")
     var send_usr = $("#send_usr")
     var chatroom = $("#chatroom")
 
+    //Send message, emitting to all sockets
     send_msg.on('keydown', function(e){
         if(e.which == 13){
             console.log(send_msg.val())
@@ -18,6 +17,7 @@ $(function(){
         }
     })
 
+    //Change username, emitting to server
     send_usr.on('keydown', function(e){
         if(e.which == 13){
             console.log(send_usr.val())
@@ -25,6 +25,7 @@ $(function(){
         }
     })
 
+    //Recieve and add messages to chatroom
     socket.on('new_message', (data)=>{
         console.log(data)
         chatroom.append("<p class='message'>" + data.username + ": " + data.message + "</p>")

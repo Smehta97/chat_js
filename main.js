@@ -4,7 +4,7 @@ const app = express()
 //template engine for ejs
 app.set('view engine', 'ejs')
 
-//middleware
+//Static dirs
 app.use(express.static(__dirname + '/public'))
 
 //routes
@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+//port, localhost:3000
 server = app.listen(3000)
 
 const io = require("socket.io")(server)
