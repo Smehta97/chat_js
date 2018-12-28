@@ -1,0 +1,106 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+div#top{
+    position: fixed;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Khand", sans-serif;
+    background-color: #841cc9;
+}
+
+div#top input{
+    width: 100%;
+    height: 30px;
+    font-family: "Khand", sans-serif;
+    border: 2px solid black;
+    font-size: 15px;
+    text-indent: 10px;
+}
+
+div#top input::placeholder{
+    color: black;
+    font-family: "Khand", sans-serif;
+    text-indent: 10px;
+}
+
+body{
+    background-color: #edf0f1;
+}
+
+div#chatroom{
+    padding-top: 120px;
+    width: 100%;
+    max-height: 85%;
+    overflow-y: scroll;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 11;
+    background: #841cc9;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer input {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 97%;
+    height: 60px;
+    float: left;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-indent: 20px;
+    color: #fff;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    border-radius: 25px;
+    position: relative;
+    outline: none;
+    border: 0px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+
+.footer input::placeholder{
+    color: #ededed;
+    font-size: 40px;
+}
+
+p{
+    font-family: "Khand", sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+p.heading{
+    font-family: "Khand", sans-serif;
+    font-size: 20px;
+    text-indent: 10px;
+    color: #edf0f1;
+    padding: 0;
+    margin: 0 0 10 0;
+}
+
+p.title{
+    font-family: "Khand", sans-serif;
+    font-size: 40px;
+    text-indent: 10px;
+    padding: 0;
+    margin: 0;
+    color: #edf0f1;
+}
